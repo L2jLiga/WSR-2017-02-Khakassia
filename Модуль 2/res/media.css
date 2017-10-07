@@ -1,0 +1,17 @@
+@media (min-width: 981px)
+{
+	header > section.firstpaneel,
+	footer
+	{
+		padding-left: calc(50vw - 980px/2);
+		padding-right: calc(50vw - 980px/2);
+	}
+}
+
+@media (max-width: 916px)
+{
+	main > section > article > div#gallery > div > img
+	{
+		max-width: 20vw;
+	}
+}

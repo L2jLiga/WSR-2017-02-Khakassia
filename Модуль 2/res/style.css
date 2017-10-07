@@ -1,0 +1,485 @@
+html, body
+{
+	outline: none;
+	border: none;
+	color: initial;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	background-color: #e1e2e5;
+}
+
+
+/**
+ * Панель с названием компании
+ * И строкой поиска
+ */
+header > section.firstpaneel
+{
+	height: 72px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #656f7a;
+	background-color: #283334;
+	max-width: 980px;
+}
+header > section.firstpaneel > div > h1
+{
+	color: #a5adb8;
+}
+
+header > section.firstpaneel > div > h1 > span
+{
+	color: #ae4b5d;
+}
+header > section.firstpaneel > div:first-child
+{
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+}
+header > section.firstpaneel > div:first-child > *
+{
+	margin: 0;
+}
+header > section.firstpaneel > div:first-child > h1
+{
+	font-size: xx-large;
+	line-height: 32px;
+}
+header > section.firstpaneel > div:first-child > p
+{
+	font-size: smaller;
+}
+
+
+/**
+ * Панель поиска
+ */
+header > section.firstpaneel > div:last-child
+{
+	display: flex;
+	flex-direction: row;
+}
+header > section.firstpaneel > div:last-child > input
+{
+	background-color: #24272d;
+	color: #5b636e;
+	border: none;
+	padding: 12px;
+	font-size: 10px;
+	border: 1px solid #875f66;
+	border-radius: 5px;
+}
+header > section.firstpaneel > div:last-child > button
+{
+	border: none;
+	padding: 0;
+	margin-left: 10px;
+	height: 35px;
+	background-color: #ae4b5d;
+	width: 35px;
+	border-radius: 5px;
+}
+header > section.firstpaneel > div:last-child > button > img
+{
+	filter: invert();
+}
+
+
+/**
+ * Слайдер, фоновое изображение и т.п.
+ */
+header > section.slider
+{
+	height: 240px;
+	max-width: 980px;
+	background-image: url("cherry.png");
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-left: 40px;
+	padding-top: 45px;
+}
+header > section.slider > h2
+{
+	margin: 0;
+	font-size: xx-large;
+	color: #a5adb8;
+}
+header > section.slider > h2 > span
+{
+	color: #ae4b5d;
+}
+header > section.slider > h5,
+header > section.slider > h6,
+header > section.slider > p
+{
+	margin: 0;
+}
+header > section.slider > h5
+{
+	font-size: large;
+	color: #a5adb8;
+}
+header > section.slider > h6
+{
+	font-size: large;
+	margin-bottom: 18px;
+	color: #282d33;
+}
+
+header > section.slider > p
+{
+	color: #d9dcdf;
+	max-width: 490px;
+	font-size: 14px;
+}
+
+/** 
+ * Меню навигации
+ */
+header > nav:first-of-type
+{
+	background-color: #95161f;
+	color: white;
+	max-width: 980px;
+	margin: auto;
+	height: 36px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header > nav:first-of-type > a
+{
+	display: flex;
+	color: white;
+	text-decoration: none;
+	margin-left: 30px;
+	margin-right: 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+/**
+ * Меню навигации по уровням вложенности
+ */
+header > nav#breadcrumbs 
+{
+	background-color: #f3f3f3;
+	color: #6b6f74;
+	height: 26px;
+	line-height: 26px;
+	max-width: 980px;
+	margin: 0 auto;
+	font-size: 14px;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+header > nav#breadcrumbs > a
+{
+	color: #95161f;
+}
+
+/**
+ * Main container
+ */
+main
+{
+	max-width: 980px;
+	margin: 0 auto;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+}
+/**
+ * Aside bar
+ */
+main > aside
+{
+	padding: 20px;
+	width: 212px;
+}
+
+main > aside > form
+{
+	border: 1px solid #d8dbde;
+	background: #f3f3f3;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+main > aside > h3,
+main > aside > form > h3
+{
+	font-size: 18px;
+}
+main > aside > form > input,
+main > aside > form > select,
+main > aside > form > button
+{
+	font-size: 14px;
+	padding: 10px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	width: 170px;
+	max-width: 100%;
+	border-radius: 5px;
+	border :1px solid #a2a2a2;
+}
+main > aside > form > button
+{
+	border-radius: 0;
+	border: none;
+	outline: 5px solid white;
+	background: #a8202a;
+	color: #f5f4f4;
+}
+
+/**
+ * Headline
+ */
+main > aside > h3
+{
+	margin-bottom: 0px;
+}
+main > aside > p
+{
+	color: #5c646e;
+	font-size: 13px;
+	margin-bottom: 6px;
+}
+main > aside > a
+{
+	font-size: 13px;
+	color: #95161f;
+}
+
+
+
+/**
+ * Content
+ */
+main > section
+{
+	padding-right: 20px;
+}
+main > section > article > h2 
+{
+	color: #a5adb8;
+}
+main > section > article > h2 > span
+{
+	color: #ae4b5d;
+}
+main > section > article > p
+{
+	font-size: 14px;
+	color: #5c646e;
+}
+main > section > article > p > a
+{
+	color: #95161f;
+}
+
+/**
+ * Some images from right sidebar...
+ */
+main > section > article > div#gallery
+{
+	display: flex;
+	flex-direction: row;
+}
+main > section > article > div#gallery > div
+{
+	display: flex;
+	flex-basis: 200px;
+	flex-direction: column;
+	margin-right: 15px;
+}
+main > section > article > div#gallery > div > h5
+{
+	font-size: 16px;
+	margin: 5px 0;
+}
+main > section > article > div#gallery > div > img
+{
+	outline: 2px solid white;
+	box-shadow: 5px 0 5px rgba(0,0,0,.3);
+}
+
+
+/**
+ * List styles
+ */
+main > section > article#listexmple
+{
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	color: #5c646e;
+}
+main > section > article#listexmple > div
+{
+	padding-right: 10px;
+}
+main > section > article#listexmple > div > h4 > code
+{
+	background-color: #dedede;
+	border-radius: 5px;
+	padding: 3px;
+}
+main > section > article#listexmple > div > ol,
+main > section > article#listexmple > div > ul,
+main > section > article#listexmple > div > ul > li > ul
+{
+	padding-left: 20px;
+}
+main > section > article#listexmple > div > ul > li > ul
+{
+	list-style: initial;
+}
+main > section > article#listexmple > div > ul.unstyled
+{
+	list-style: none;
+}
+
+
+/**
+ * Table styles
+ */
+main > section > article > table
+{
+	font-size: 13px;
+	width: 100%;
+	max-width: calc(100vw - 270px);
+}
+main > section > article > table > tbody > tr > td:first-of-type
+{
+	text-align: center;
+}
+main > section > article > table > thead > tr,
+main > section > article > table > tbody > tr
+{
+	margin: 0;
+}
+main > section > article > table > thead > tr > th,
+main > section > article > table > tbody > tr > td
+{
+	padding: 10px;
+	margin: 0;
+	border: none;
+}
+main > section > article > table > thead > tr > th
+{
+	color: white;
+	background-color: #9c4757;
+}
+main > section > article > table > thead > tr > th:first-child
+{
+	border-radius: 10px 0 0 0;
+}
+main > section > article > table > thead > tr > th:last-child
+{
+	border-radius: 0 10px 0 0;
+}
+
+main > section > article > table > tbody > tr > td
+{
+	background-color: #282d33;
+	color: #9da4af;
+}
+main > section > article > table > tbody > tr > td > a
+{
+	color: #d08b98;
+}
+main > section > article > table > tbody > tr:last-child > td:first-child
+{
+	border-radius: 0 0 0 10px;
+}
+main > section > article > table > tbody > tr:last-child > td:last-child
+{
+	border-radius: 0 0  10px 0;
+}
+
+main > section > article:last-child
+{
+	padding-bottom: 60px;
+}
+
+/**
+ * Footer
+ */
+footer
+{
+	background-color: #2b2a31;
+	display: flex;
+	flex-direction: row;
+	max-width: 980px;
+	color: #85898f;
+	font-size: 14px;
+	border-top: 8px solid #ae4b5d;
+}
+footer > article
+{
+	flex-basis: 33%;
+}
+footer > article > h3
+{
+	color: #a5adb8;
+}
+footer > article > h3 > span
+{
+	color: #ae4b5d;
+}
+footer > article > hr
+{
+	border-color: #191c20;
+	border-bottom: 1px solid #40474f;
+	max-width: 70%;
+	margin: 0 auto 0 0;
+}
+
+footer > article > p > strong
+{
+	color: #a5adb8;
+}
+
+footer > article > p
+{
+	margin: 0;
+}
+footer > article:last-child > p
+{
+	margin-bottom: 12px;
+}
+
+footer > article:first-child > ul
+{
+	list-style-image: url("hours.png");
+}
+footer > article:first-child > ul > li
+{
+	margin-bottom: 12px;
+}
+
+
+footer > article:nth-child(2) > ul
+{
+	list-style-image: url("liststyle2.png");
+}
+footer > article:nth-child(2) > ul > li
+{
+	margin-bottom: 10px;
+}
+
+
+footer > article:last-child > p > a
+{
+	color: #d08b98;
+}

@@ -1,0 +1,3 @@
+MobileMenuButton - нажатие на кнопку меню вызывает выпадающее меню
+DesktopHoverMenu - наведение на ссылку
+DesktopHoverCat - наведение на значок

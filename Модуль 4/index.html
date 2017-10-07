@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Экскурсии от Discovery</title>
+<link rel="stylesheet" href="res/jquery-ui.min.css" />
+<link rel="stylesheet" href="res/jquery-ui.structure.min.css" />
+<link rel="stylesheet" href="res/jquery-ui.theme.min.css" />
+<link rel="stylesheet" href="res/application.css" />
+
+<script src="res/jquery-3.1.1.min.js"></script>
+<script src="res/jquery-ui.min.js"></script>
+<script src="res/application.js"></script>
+
+<section id="section1" style="display: block;">
+	<h2>Скучно?..</h2>
+	<h2>И грустно?...</h2>
+
+	<div>
+		<h2>Есть выход!</h2>
+		<p>Туристическое агенство Discovery предлагает туры по Хакасии!</p>
+		<button data-target="section1"><img draggable="false" src="res/icon_urta.png" /> Попробовать!</button>
+	</div>
+</section>
+
+<section id="section2">
+	<img draggable="false" src="res/icon_urta.png" style="float:left;height: 100px" />
+	<h2 style="text-align:center;font-size: 32px;">Путешествуй по многим интересным местам с <span style="font-size:48px">Discovery!</span></h2>
+	<span style="clear:both; display: table"></span>
+
+	<div>
+		<span>
+			<img draggable="false" src="res/s2i1.jpg" />
+			<span data-target="section2">Подробнее..</span>
+		</span>
+		<span>
+			<img draggable="false" src="res/s2i2.jpg" />
+			<span data-target="section2">Подробнее..</span>
+		</span>
+		<span>
+			<img draggable="false" src="res/s2i3.jpg" />
+			<span data-target="section2">Подробнее..</span>
+		</span>
+		<span>
+			<img draggable="false" src="res/s2i4.jpg" />
+			<span data-target="section2">Подробнее..</span>
+		</span>
+	</div>
+
+	<button data-target="section2">Записаться на экскурсию!</button>
+</section>
+
+<section id="section3">
+	<h2 style="text-align: center;">Для начала пройдем регистрацию =)</h2>
+	<h2>Это не сложно.. И займет буквально пару секунд..</h2>
+
+	<input id="reg_login" placeholder="Ваш логин" />
+	<span>Username</span>
+	<input id="reg_password" placeholder="Ваш пароль" />
+	<span>Password</span>
+	<button data-target="section3">Зарегистрироваться!</button>
+</section>
+
+<section id="section4">
+	<h2 style="text-align: center;">Осталось авторизироваться и можно приступать..</h2>
+
+	<input id="reg_login" placeholder="Ваш логин" />
+	<span>Username</span>
+	<input id="reg_password" placeholder="Ваш пароль" />
+	<span>Password</span>
+	<button data-target="section4">Зайти на сайт!</button>
+</section>
+
+
+<section id="section5">
+	<h2 style="text-align: center">Список экскурсий</h2>
+	<div>
+		<div>
+			<img draggable="false" src="res/s2i1.jpg" />
+			<h3>Экскурсия по храмам</h3>
+			<p>И другим историческим постройкам, за время экскурсий вы поднимете свой духовный уровень и навыки концентрирования внимания!</p>
+			<a data-target="section5">Узнайте больше..</a>
+		</div>
+		<div>
+			<img draggable="false" src="res/s2i2.jpg" />
+			<h3>Уютные базы отдыха</h3>
+			<p>Отдохните с любимыми на наших чудесных базах отдыха!</p>
+			<a data-target="section5">Узнайте больше..</a>
+		</div>
+		<div>
+			<img draggable="false" src="res/s2i3.jpg" />
+			<h3>Крутые котеджи</h3>
+			<p>Хотите пожить как короли? Или найти место где провести самую крутую тусовку? Тогда представляем вашему вниманию наши крутые котеджи!</p>
+			<a data-target="section5">Узнайте больше..</a>
+		</div>
+		<div>
+			<img draggable="false" src="res/s2i4.jpg" />
+			<h3>Отдых на природе</h3>
+			<p>Посмотрите на красоту природы, отдохните от городской суеты!</p>
+			<a data-target="section5">Узнайте больше..</a>
+		</div>
+	</div>
+</section>
+
+<section id="section6" >
+	<img draggable="false" />
+	<h2></h2>
+	<div><b>Описание: </b></div>
+	<p><b>Стоимость: </b> 12 600 руб.</p>
+	<span class="helper">Ожидание пока экскурсовод подтвердит ваше участие</span>
+	<span class="helper2">Отлично, вас приняли! Теперь осталось только договориться о встрече через чат!</span>
+	<button data-prev="section5">Другие варианты</button>
+	<button data-chat>Оставить заявку</button>
+</section>
+
+<section id="section7">
+	<h2 style="text-align: center;">Обсуждение экскурсии:</h2>
+	<div>
+	<div>От <b>Yakobs</b>:<br />
+	Привет, ну так во сколько идем на экскурсию?
+	</div>
+	<div>От <b>Username</b>:<br />
+	Привет, да хоть прямо сейчас!
+	</div>
+	<div>От <b>Username</b>:<br />
+	Я уже почти собрался!
+	</div>
+	<div>От <b>Yakobs</b>:<br />
+	Здорово, тогда встречаемся через 30 минут на площади!
+	</div>
+	</div>
+
+	<fieldset>
+		<p>Форма отправки сообщения:</p>
+		<textarea rows="6" cols="40"></textarea>
+		<button data-submit>Отправить<br />Сообщение</button>
+	</fieldset>
+	<button data-target="section7">Поехали!</button>
+</section>
+
+<section id="section8">
+	<h2 style="text-align: center">А после экскурсии..</h2>
+	<div class="slider"></div>
+	<p>Море ярких впечатлений!</p>
+	<div class="rating">
+		<img draggable="false" src="res/1.png" />
+		<img draggable="false" src="res/2.png" />
+		<img draggable="false" src="res/3.png" />
+		<img draggable="false" src="res/4.png" />
+		<img draggable="false" src="res/5.png" />
+	</div>
+	<button data-restart>Повторить<br />демонстрацию</button>
+	<a href="#" target="_blank">Попробовать<br/>самостоятельно!</a> 
+</section>
